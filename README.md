@@ -12,13 +12,15 @@ The code has been tested running under Python 3.6.10 and Centos7, with the follo
 - scipy == 1.4.1
 
 ### Dataset
-Dataset Link: https://nijianmo.github.io/amazon/index.html (Or https://jmcauley.uscd.edu/dataset/amazon)
+**Dataset Link:** https://nijianmo.github.io/amazon/index.html (Or https://jmcauley.uscd.edu/dataset/amazon)
 
-Feature meaning:
+**Feature meaning:**
+
 - asin: ID of the product
 - title:
 - 
-Dataset Preprocess:
+
+**Dataset Preprocess:**
 Step1 : merge the reviews information and meta information similar as https://github.com/zhougr1993/DeepInterestNetwork 
 
 Step2: 
