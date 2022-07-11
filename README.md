@@ -14,16 +14,36 @@ The code has been tested running under Python 3.6.10 and Centos7, with the follo
 ### Dataset
 **Dataset Link:** https://nijianmo.github.io/amazon/index.html (Or https://jmcauley.uscd.edu/dataset/amazon)
 
-**Feature meaning:**
+merge the reviews information and meta information similar as https://github.com/zhougr1993/DeepInterestNetwork 
+
+**Feature Meaning:**
 
 - asin: ID of the product
-- title:
-- 
+- title: name of the product
+- description: description of the product
+- price: price in US dollars
+- reviewerID: ID of the reviewer
+- reviewTime: time of the review
+- reviewerName: name of the reviewer
+- vote: helpful votes of the review
+- style: a disctionary of the product metadata
+- reviewText: text of the review
+- unixReviewTime: time of the review
+- imageURL: url of the high resolution product image
+- brand: brand name
+- overall: rating of the product
 
-**Dataset Preprocess:**
-Step1 : merge the reviews information and meta information similar as https://github.com/zhougr1993/DeepInterestNetwork 
+Two special feaures
+- popularity: frequency of an product ID in the dataset (statistical results)
+- label: we set overall over 3 as conversion behavior, labeled 1, otherwise 0.
 
-Step2: 
+**Feature Classification:**
+user-side feautres: reviewerID,  reviewerName
+item-side features: asin, title, description, price, reviewTime, vote, style, reviewText, unixReviewTime, imageURL, brand
+dense features: price
+sparse features: reviewerID, reviewerName, asin, title, description,reviewTime, vote, style, reviewText, unixReviewTime, imageURL, brand
+coarse features(only item-side): price, vote, unixReviewTime, brand, style
+fine featuress(only item-side): asin, reviewText, title, summary, imageURL, description
 
 ### Running the code
 Step1: 
