@@ -60,5 +60,5 @@ $ mv autofuse.py DeepCTR/deepctr/models
 
 Step3:
 ```
-$ python main.py
+$ python3 main.py
 ```
