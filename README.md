@@ -38,17 +38,13 @@ Two special feaures
 - label: we set overall over 3 as conversion behavior, labeled 1, otherwise 0.
 
 **Feature Classification:**
-user-side feautres: reviewerID,  reviewerName
 
-item-side features: asin, title, description, price, reviewTime, vote, style, reviewText, unixReviewTime, imageURL, brand
-
-dense features: price
-
-sparse features: reviewerID, reviewerName, asin, title, description,reviewTime, vote, style, reviewText, unixReviewTime, imageURL, brand
-
-coarse features(only item-side): price, vote, unixReviewTime, brand, style
-
-fine featuress(only item-side): asin, reviewText, title, summary, imageURL, description
+- user-side feautres: reviewerID,  reviewerName
+- item-side features: asin, title, description, price, reviewTime, vote, style, reviewText, unixReviewTime, imageURL, brand
+- dense features: price
+- sparse features: reviewerID, reviewerName, asin, title, description,reviewTime, vote, style, reviewText, unixReviewTime, imageURL, brand
+- coarse features(only item-side): price, vote, unixReviewTime, brand, style
+- fine featuress(only item-side): asin, reviewText, title, summary, imageURL, description
 
 ### Running the code
 Step1: 
