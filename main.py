@@ -22,7 +22,7 @@ if __name__ == "__main__":
     sparse_coarse_features =  ['vote', 'unixReviewTime','brand','style']
     sparse_fine_features = ['asin','reviewText','title', 'summary','imageURL','description']
     pop_features = ['popularity']
-    label_features = ['overall']
+    label_features = ['label']
 
     sparse_features = sparse_user_features + sparse_coarse_features + sparse_fine_features
     dense_features = dense_coarse_features + dense_fine_features
