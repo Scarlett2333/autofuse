@@ -48,6 +48,7 @@ Two special feaures
 
 ### Running the code
 The sample code is built based on Weichen Shen. (2017). DeepCTR: Easy-to-use, Modular and Extendible package of deep-learning based CTR models. https://github.com/shenweichen/deepctr.
+
 Step1: 
 ```
 $ git clone https://github.com/shenweichen/DeepCTR.git 
