@@ -34,7 +34,7 @@ def AUTOFUSE(user_feature_columns, coarse_feature_columns, fine_feature_columns,
     pop_features = build_input_features(pop_feature_columns)
     label_features = build_input_features(label_feature_columns)
 
-    inputs_list = list(fine_features.values())+list(coarse_features.values())+list(user_features.values())+list(pop_features.values())+list(label_features.values())
+    inputs_list = list(fine_features.values())+list(coarse_features.values())+list(user_features.values())+list(pop_features.values())
 
     sparse_fine_embedding_list, dense_value_list = input_from_feature_columns(fine_features, fine_feature_columns,
                                                                          l2_reg_embedding, seed)
