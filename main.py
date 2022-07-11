@@ -5,7 +5,7 @@ import pickle
 from sklearn.metrics import log_loss, roc_auc_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
-from DeepCTR.deepctr.models.multitask.autofuse_no_expert import AUTOFUSE
+from DeepCTR.deepctr.models.autofuse import AUTOFUSE
 from DeepCTR.deepctr.layers.core import PredictionLayer, DNN
 from DeepCTR.deepctr.feature_column import SparseFeat, DenseFeat, get_feature_names
 import time
