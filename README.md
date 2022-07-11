@@ -34,7 +34,7 @@ merge the reviews information and meta information similar as https://github.com
 - overall: rating of the product
 
 Two special feaures
-- popularity: frequency of an product ID in the dataset (statistical results)
+- popularity: historically cumulative conversions of each product in the dataset (statistical results)
 - label: we set overall over 3 as conversion behavior, labeled 1, otherwise 0.
 
 **Feature Classification:**
