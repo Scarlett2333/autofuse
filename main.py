@@ -5,8 +5,6 @@ import pickle
 from sklearn.metrics import log_loss, roc_auc_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
-import sys
-sys.path.append("..")
 from DeepCTR.deepctr.models.multitask.autofuse_no_expert import AUTOFUSE
 from DeepCTR.deepctr.layers.core import PredictionLayer, DNN
 from DeepCTR.deepctr.feature_column import SparseFeat, DenseFeat, get_feature_names
@@ -69,9 +67,9 @@ if __name__ == "__main__":
     pred_ans = model.predict(test_model_input, batch_size=512)
     CTR_logloss = round(log_loss(test[target].values, pred_ans[0]), 4)
     CTR_AUC = round(roc_auc_score(test[target].values, pred_ans[0]), 4)
+    end = time.time()
 
     print("CTR: test LogLoss", CTR_logloss)
     print("CTR: test AUC", CTR_AUC)
-    end = time.time()
     print("time", end - start)
 
