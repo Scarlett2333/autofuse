@@ -49,7 +49,7 @@ if __name__ == "__main__":
     pop_feature_columns = [DenseFeat(feat,1,) for feat in pop_features]
     label_feature_columns = [DenseFeat(feat,1,) for feat in label_features]
 
-    feature_names = get_feature_names(fine_feature_columns + coarse_feature_columns + user_feature_columns + pop_feature_columns + label_feature_columns)
+    feature_names = get_feature_names(fine_feature_columns + coarse_feature_columns + user_feature_columns + pop_feature_columns)
 
     # 3.generate input data for model
     train, test = train_test_split(data, test_size=0.2, random_state=2018)
