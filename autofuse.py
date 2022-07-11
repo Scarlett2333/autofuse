@@ -115,6 +115,3 @@ def AUTOFUSE(user_feature_columns, coarse_feature_columns, fine_feature_columns,
     output_ad = PredictionLayer('binary', name='ctr3')(logit_ad)
     model = tf.keras.models.Model(inputs=inputs_list, outputs=[output, output_group, output_ad])
     return model
-
-# test AUC 0.8761
-# 0.9076
