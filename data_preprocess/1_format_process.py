@@ -21,7 +21,7 @@ with open('dataset/reviews_CDs.pkl', 'wb') as f:
 
 meta_df = to_df('ft_local/meta_CDs_and_Vinyl.json')
 meta_df = meta_df[meta_df['asin'].isin(reviews_df['asin'].unique())]
-meta_df = meta_df.reset_index(drop=True)
+meta_df = meta_df.reset_index(drop=True) 
 with open('dataset/meta_CDs.pkl', 'wb') as f:
   pickle.dump(meta_df, f, pickle.HIGHEST_PROTOCOL)
 
