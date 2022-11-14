@@ -1,6 +1,6 @@
 # autofuse
 This repository is the sample code for the paper
-> Towards Explicitly Learning Multi-Level Representations for Cold-start Advertisement
+> Automatic Fusion Network for Cold-start CVR Prediction with Explicit Multi-Level Representation
 
 ### Environment
 The code has been tested running under Python 3.6.10 and Centos7, with the following packages installed (along with their dependencies):
