@@ -14,7 +14,9 @@ The code has been tested running under Python 3.6.10 and Centos7, with the follo
 ### Dataset
 **Dataset Link:** https://nijianmo.github.io/amazon/index.html (Or https://jmcauley.uscd.edu/dataset/amazon)
 
-merge the reviews information and meta information similar as https://github.com/zhougr1993/DeepInterestNetwork 
+Data Preprocess:
+
+merge the reviews information and meta information similar as G. Zhou, C. Song, X. Zhu, X. Ma, Y. Yan, X. Dai, H. Zhu, J. Jin,H. Li, and K. Gai, “Deep interest network for click-through rate prediction.” https://github.com/zhougr1993/DeepInterestNetwork 
 
 **Feature Meaning:**
 
@@ -45,9 +47,6 @@ Two special feaures
 - sparse features: reviewerID, reviewerName, asin, title, description,reviewTime, vote, style, reviewText, unixReviewTime, imageURL, brand
 - coarse features(only item-side): price, vote, unixReviewTime, brand, style
 - fine featuress(only item-side): asin, reviewText, title, summary, imageURL, description
-
-### Data Preprocess
-The code is built based on G. Zhou, C. Song, X. Zhu, X. Ma, Y. Yan, X. Dai, H. Zhu, J. Jin,H. Li, and K. Gai, “Deep interest network for click-through rate prediction,” CoRR, vol. abs/1706.06978, 2017. [Online]. Available: https://arxiv.org/abs/1706.06978
 
 ### Running the code
 The sample code is built based on Weichen Shen. (2017). DeepCTR: Easy-to-use, Modular and Extendible package of deep-learning based CTR models. https://github.com/shenweichen/deepctr.
