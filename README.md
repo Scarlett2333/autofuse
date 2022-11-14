@@ -47,11 +47,7 @@ Two special feaures
 - fine featuress(only item-side): asin, reviewText, title, summary, imageURL, description
 
 ### Data Preprocess
-The code is built based on @article{Zhou2017Deep,
-  title={Deep Interest Network for Click-Through Rate Prediction},
-  author={Zhou, Guorui and Song, Chengru and Zhu, Xiaoqiang and Ma, Xiao and Yan, Yanghui and Dai, Xingya and Zhu, Han and Jin, Junqi and Li, Han and Gai, Kun},
-  year={2017},
-}
+The code is built based on G. Zhou, C. Song, X. Zhu, X. Ma, Y. Yan, X. Dai, H. Zhu, J. Jin,H. Li, and K. Gai, “Deep interest network for click-through rate prediction,” CoRR, vol. abs/1706.06978, 2017. [Online]. Available: https://arxiv.org/abs/1706.06978
 
 ### Running the code
 The sample code is built based on Weichen Shen. (2017). DeepCTR: Easy-to-use, Modular and Extendible package of deep-learning based CTR models. https://github.com/shenweichen/deepctr.
