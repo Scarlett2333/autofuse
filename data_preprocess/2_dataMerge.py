@@ -23,7 +23,7 @@ with open('dataset/meta_CDs.pkl', 'rb') as f:
   meta_df = meta_df[['asin','imageURL','description','title','price','brand']]
   meta_df['imageURL'] = meta_df['imageURL'].map(lambda x: x[0] if x != [] else '-1')
   meta_df['description'] = meta_df['description'].map(lambda x: x[0] if x != [] else '-1')
-  meta_df['price'] = meta_df['price'].map(lambda x: float(x[1:].replace(',','')) if x!="" and x[0]=='$' else 0.0)  # 有些数据存在混乱乱码
+  meta_df['price'] = meta_df['price'].map(lambda x: float(x[1:].replace(',','')) if x!="" and x[0]=='$' else 0.0) 
   
 
 data = pd.merge(reviews_df, meta_df)
@@ -36,15 +36,13 @@ data.overall[data.overall>3] = 1
 
 print(data)
 
-# 统计pop
+# compute pop
 count = pd.DataFrame(data['asin'].value_counts())
 print(type(count))
 count = count.reset_index()
 
 count.columns=['asin','pop']
-print(count)
 data = pd.merge(data,count)
-
 
 
 # split old ads and new ads
