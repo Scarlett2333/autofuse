@@ -14,7 +14,7 @@ The code has been tested running under Python 3.6.10 and Centos7, with the follo
 ### Dataset
 **Dataset Link:** https://nijianmo.github.io/amazon/index.html (Or https://jmcauley.uscd.edu/dataset/amazon)
 
-Data Preprocess:
+**Data Preprocess:**
 
 merge the reviews information and meta information similar as G. Zhou, C. Song, X. Zhu, X. Ma, Y. Yan, X. Dai, H. Zhu, J. Jin,H. Li, and K. Gai, “Deep interest network for click-through rate prediction.” https://github.com/zhougr1993/DeepInterestNetwork 
 
